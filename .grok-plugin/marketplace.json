@@ -261,7 +261,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/Nimbleway/agent-skills.git",
-        "sha": "a20381d24acd0fefeb26d7ca9d674a2cae4c8c4c"
+        "sha": "b341a85ee75e9d60c5627d5c2d109df06a6b8053"
       },
       "homepage": "https://www.nimbleway.com",
       "keywords": ["nimble", "nimble web search", "nimbleway"],
