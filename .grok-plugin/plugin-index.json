@@ -90,20 +90,20 @@
       }
     },
     "bruin": {
-      "sha": "8e1435ec45a9d1f1df8a89104b01112db0feaca2",
-      "version": "1.0.0",
+      "sha": "311bac60c8fc9d3a158dbce866c653c0823c97a7",
+      "version": "1.1.0",
       "components": {
         "skills": [
           {
             "name": "bruin-api-integration",
-            "description": "Help a client build, debug, or extend an integration with the Bruin Public API — MetTel's REST API for tickets, invento…"
+            "description": "Help a client build, debug, or extend an integration with the Bruin Public API, MetTel's REST API for tickets, inventor…"
           }
         ]
       }
     },
     "chrome-devtools": {
-      "sha": "6e53015a16423e3758a14d82c494cfcb4c07c3ea",
-      "version": "1.9.0",
+      "sha": "6a7e51fecaaefbea46b89e68892d42c175ee9163",
+      "version": "1.10.1",
       "components": {
         "mcpServers": [
           {
@@ -262,8 +262,8 @@
       }
     },
     "figma": {
-      "sha": "d638a5e055e8d95e0394a94350860398cf424b74",
-      "version": "2.2.111",
+      "sha": "172920731eedf414e9b22ae60017d9a5b6c9f81f",
+      "version": "2.2.120",
       "components": {
         "mcpServers": [
           {
@@ -278,7 +278,7 @@
           },
           {
             "name": "figma-create-new-file",
-            "description": "**MANDATORY prerequisite** — you MUST invoke this skill BEFORE every `create_new_file` tool call. NEVER call `create_ne…"
+            "description": "Always use this skill when the user wants to create a new Figma Design, FigJam, or Slides file. You MUST invoke this sk…"
           },
           {
             "name": "figma-design-to-code",
@@ -395,9 +395,21 @@
         ]
       }
     },
+    "helena": {
+      "sha": "9b71516e006144d323f138f1785f55123ec51931",
+      "version": "1.0.0",
+      "components": {
+        "mcpServers": [
+          {
+            "name": "helena",
+            "description": "http"
+          }
+        ]
+      }
+    },
     "modern-web-guidance": {
-      "sha": "bfd8c8dded770f3ba07a518e28991a32df40f902",
-      "version": "0.0.187",
+      "sha": "22ab18dfb50a5d7e3bdcf471c14076a5534eae4e",
+      "version": "0.0.190",
       "components": {
         "skills": [
           {
@@ -517,8 +529,8 @@
       }
     },
     "netlify": {
-      "sha": "b4fd870cf2f1f4cc66b28ead16277e1d799b510f",
-      "version": "1.3.2",
+      "sha": "0830047fec55c33ea3f360b528c2039b9d96d97f",
+      "version": "1.5.1",
       "components": {
         "mcpServers": [
           {
@@ -529,7 +541,7 @@
         "skills": [
           {
             "name": "netlify-access-control",
-            "description": "Picks the right Netlify protection layer for a deployed site and disambiguates the three unrelated things people call \"…"
+            "description": "Picks the right Netlify site-protection layer and disambiguates the three unrelated \"auth\" concepts users conflate — ap…"
           },
           {
             "name": "netlify-agent-runner",
@@ -537,11 +549,11 @@
           },
           {
             "name": "netlify-ai-gateway",
-            "description": "Use OpenAI, Anthropic, Google Gemini, or OpenRouter models from Netlify Functions or Edge Functions without managing pr…"
+            "description": "Use Netlify AI Gateway to call OpenAI, Anthropic Claude, Google Gemini, TypeSafe (Jev), or OpenRouter-hosted models (xA…"
           },
           {
             "name": "netlify-blobs",
-            "description": "Store and retrieve unstructured objects, file uploads, and cache-like state on Netlify using the @netlify/blobs key/val…"
+            "description": "Store and retrieve unstructured data like file uploads, images, documents, JSON, and cache-like state with Netlify Blob…"
           },
           {
             "name": "netlify-caching",
@@ -549,7 +561,7 @@
           },
           {
             "name": "netlify-config",
-            "description": "Configure Netlify projects via netlify.toml and the _headers/_redirects files — covering build settings and deploy cont…"
+            "description": "Configure Netlify builds and routing via netlify.toml, _redirects, and _headers. Use when setting a build command or pu…"
           },
           {
             "name": "netlify-database",
@@ -557,7 +569,7 @@
           },
           {
             "name": "netlify-deploy",
-            "description": "Create and manage Netlify deploys — Git continuous deployment, CLI manual/anonymous deploys, Deploy to Netlify buttons,…"
+            "description": "Create, configure, and manage Netlify deploys from code — reach for this when setting up Git continuous deployment, run…"
           },
           {
             "name": "netlify-edge-functions",
@@ -577,7 +589,7 @@
           },
           {
             "name": "netlify-identity",
-            "description": "Add authentication and user management to a Netlify site with @netlify/identity — signup/login/logout, OAuth social log…"
+            "description": "Add user authentication to a Netlify site with @netlify/identity — signup/login/logout, Google/GitHub/GitLab/Bitbucket…"
           },
           {
             "name": "netlify-image-cdn",
@@ -700,6 +712,24 @@
         ]
       }
     },
+    "octen": {
+      "sha": "5310f0d1225f37e98cc49f14d3caaa1b4dfb96c3",
+      "version": "1.0.0",
+      "components": {
+        "mcpServers": [
+          {
+            "name": "octen",
+            "description": "http"
+          }
+        ],
+        "skills": [
+          {
+            "name": "octen-web",
+            "description": "Use Octen for web/news search, broad research, and clean URL extraction."
+          }
+        ]
+      }
+    },
     "omneky": {
       "version": "1.0.0",
       "components": {
@@ -712,7 +742,7 @@
       }
     },
     "pstack": {
-      "sha": "f5bdd6826fd0a0d9cbc4347134c3a74a200b9d9d",
+      "sha": "53e579f1481697931fc44f5445171397cfa2b24b",
       "components": {
         "agents": [
           {
@@ -879,7 +909,7 @@
           },
           {
             "name": "setup-pstack",
-            "description": "Configure which models pstack uses per role. Detects your available models and writes an always-applied rule that overr…"
+            "description": "Configure which models pstack uses per role and at what reasoning budget. Detects your available models and writes an a…"
           },
           {
             "name": "show-me-your-work",
@@ -929,8 +959,8 @@
       }
     },
     "railway": {
-      "sha": "950acebcef3445f3915ea0709876c3ba9c237a7f",
-      "version": "1.4.0",
+      "sha": "ca21b2a1f9237163291a3a936b1cbb86752f4895",
+      "version": "1.5.5",
       "components": {
         "hooks": [
           {
@@ -999,8 +1029,8 @@
       }
     },
     "stripe": {
-      "sha": "583467aab18cc7113dcd2c2e20028fe73c26eaa3",
-      "version": "0.6.7",
+      "sha": "99ef7ddd24df10b78f2e0eba98c577349dd01611",
+      "version": "0.8.4",
       "components": {
         "agents": [
           {
@@ -1034,6 +1064,10 @@
             "description": "Use this skill when the user asks what information a Stripe Connect connected account must provide for verification, on…"
           },
           {
+            "name": "metronome",
+            "description": "Guides Metronome usage-based billing integration decisions — event ingestion (single and batch, idempotency, billable m…"
+          },
+          {
             "name": "stripe-apps",
             "description": "Use when building, modifying, or reviewing a Stripe App — or when the user describes something that implies one (e.g. \"…"
           },
@@ -1048,6 +1082,10 @@
           {
             "name": "stripe-docs",
             "description": "Use when the user or agent needs to read, search, or look up Stripe documentation or API reference. Prefer this over cu…"
+          },
+          {
+            "name": "stripe-pay",
+            "description": "Helps users send funds to another Stripe business, transfer money to a Stripe Profile handle or network ID, or ask whet…"
           },
           {
             "name": "stripe-projects",
@@ -1083,8 +1121,8 @@
       }
     },
     "superpowers": {
-      "sha": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
-      "version": "6.3.0",
+      "sha": "5bf4e78011075bcfc0dc295f0724994cd123ee71",
+      "version": "6.4.1",
       "components": {
         "hooks": [
           {
@@ -1098,12 +1136,16 @@
             "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying…"
           },
           {
+            "name": "diagnosing-superpowers",
+            "description": "Use when a superpowers session went wrong and your human partner wants to know why — repeated work, ignored plans, stum…"
+          },
+          {
             "name": "dispatching-parallel-agents",
             "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies"
           },
           {
             "name": "executing-plans",
-            "description": "Use when you have a written implementation plan to execute in a separate session with review checkpoints"
+            "description": "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose…"
           },
           {
             "name": "finishing-a-development-branch",
@@ -1233,8 +1275,8 @@
       }
     },
     "vercel": {
-      "sha": "df0f55213f7b8db23a3ee7f27511ed344cdb2c74",
-      "version": "0.49.1",
+      "sha": "1a2a5cd21f991d816bcf9ac9184ba14a8b1cb2b8",
+      "version": "0.50.0",
       "components": {
         "agents": [
           {
@@ -1373,6 +1415,10 @@
             "description": "Next.js App Router expert guidance. Use when building, debugging, or architecting Next.js applications — routing, Serve…"
           },
           {
+            "name": "queues",
+            "description": "Vercel Queues guidance — durable topics with at-least-once delivery, independent consumer groups, retries, delays, and…"
+          },
+          {
             "name": "react-best-practices",
             "description": "React best-practices reviewer for TSX files. Triggers after editing multiple TSX components to run a condensed quality…"
           },
@@ -1394,7 +1440,7 @@
           },
           {
             "name": "vercel-agent",
-            "description": "Vercel Agent guidance — AI-powered code review, incident investigation, and SDK installation. Automates PR analysis and…"
+            "description": "Vercel Agent guidance — dashboard and Slack chat, code review, production investigation, approved actions, and product…"
           },
           {
             "name": "vercel-cli",
@@ -1410,7 +1456,7 @@
           },
           {
             "name": "vercel-functions",
-            "description": "Vercel Functions expert guidance — Serverless Functions, Edge Functions, Fluid Compute, streaming, Cron Jobs, and runti…"
+            "description": "Vercel Functions expert guidance — Node.js/Bun/Python runtimes, Fluid Compute, long-duration (30 min) functions, large…"
           },
           {
             "name": "vercel-sandbox",
@@ -1436,8 +1482,8 @@
       }
     },
     "wix": {
-      "sha": "58922ec060ee898e1b5767a30aad874981b53474",
-      "version": "1.19.0",
+      "sha": "8fc544d319c4a4dfc7ccf3ba4adf328e1fa9866f",
+      "version": "1.19.2",
       "components": {
         "mcpServers": [
           {
